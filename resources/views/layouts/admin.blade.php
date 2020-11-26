@@ -208,17 +208,17 @@
                 <div class="collapse" id="blog">
                     <ul class="nav nav-sm flex-column">
                         <li class="nav-item">
-                            <a href="{{ route('add.blog') }}" class="nav-link ">Add Blog</a>
-                        </li>
-                        <li class="nav-item">
                             <a href="{{ route('add.blogcategory') }}" class="nav-link ">Add Blogcategory</a>
 
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('add.blog') }}" class="nav-link ">Add Blog</a>
                         </li>
                     </ul>
                 </div>
             </li>
             @else
-            @endif
+        @endif
 
            @if(Auth::user()->product == 1)
             <li class="nav-item">
@@ -249,7 +249,7 @@
             @else
             @endif
 
-           @if(Auth::user()->categorypages == 1)
+          <!--  @if(Auth::user()->categorypages == 1)
             <li class="nav-item">
                 <a class="nav-link" href="#categorypages" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="categorypages">
                     <i class="ni ni-archive-2 text-green"></i>
@@ -290,7 +290,7 @@
             </li>
             @else
             @endif
-
+ -->
                @if(Auth::user()->order == 1)
               <li class="nav-item">
                 <a class="nav-link" href="#Order" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="Order">

@@ -21,6 +21,7 @@ class CreateWebsettingsTable extends Migration
             $table->string('email')->nullable();
             $table->string('company_address')->nullable();
             $table->text('description')->nullable();
+            $table->text('logo')->nullable();
             $table->string('facebook')->nullable();
             $table->string('youtube')->nullable();
             $table->string('twitter')->nullable();

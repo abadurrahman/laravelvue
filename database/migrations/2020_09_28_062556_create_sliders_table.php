@@ -23,6 +23,7 @@ class CreateSlidersTable extends Migration
             $table->integer('womens_slider_two')->nullable();
             $table->integer('electronics_slider')->nullable();
             $table->integer('blog_slider')->nullable();
+            $table->integer('fotter_slider')->nullable();
             $table->integer('contact_slider')->nullable();
             $table->string('image_one')->nullable(); 
             $table->string('image_two')->nullable(); 

@@ -172,6 +172,7 @@
          </div>
 
           <hr style="margin-top:25px;">
+          <h3>Main Page:</h3>
          <div class="row">
           <div class="col-md-4" >
               <div class="form-group">
@@ -238,11 +239,152 @@
               </div>
           </div>
           </div> 
-          <button class="btn btn-primary" style="margin-top:15px;" type="submit">Save Blog</button>
+
+        <hr style="margin-top:25px;">
+          <h3>Category with Page:</h3>
+         <div class="row">
+          <div class="col-md-4" >
+              <div class="form-group">
+                <div class="custom-control custom-checkbox mb-3">
+               <input class="custom-control-input" id="customCheck1" type="checkbox" name="newarrivals_one" value="1">
+               <label class="custom-control-label" for="customCheck1">New Arrivals One</label>
+               </div>
+              </div>
+          </div> 
+          <div class="col-md-4" >
+              <div class="form-group">
+                <div class="custom-control custom-checkbox mb-3">
+               <input class="custom-control-input" id="customCheck2" type="checkbox" name="newarrivals_two" value="1">
+               <label class="custom-control-label" for="customCheck2">New Arrivals Two</label>
+               </div>
+              </div>
+          </div> 
+          <div class="col-md-4" >
+              <div class="form-group">
+                <div class="custom-control custom-checkbox mb-3">
+               <input class="custom-control-input" id="customCheck3" type="checkbox" name="newarrivals_three" value="1">
+               <label class="custom-control-label" for="customCheck3">New Arrivals Three</label>
+               </div>
+              </div>
+          </div> 
+          <div class="col-md-4" >
+              <div class="form-group">
+                <div class="custom-control custom-checkbox mb-3">
+               <input class="custom-control-input" id="customCheck4" type="checkbox" name="newarrivals_four" value="1">
+               <label class="custom-control-label" for="customCheck4">New Arrivals Four</label>
+               </div>
+              </div>
+          </div> 
+          <div class="col-md-4" >
+              <div class="form-group">
+                <div class="custom-control custom-checkbox mb-3">
+               <input class="custom-control-input" id="customCheck5" type="checkbox" name="newarrivals_five" value="1">
+               <label class="custom-control-label" for="customCheck5">New Arrivals Five</label>
+               </div>
+              </div>
+          </div> 
+          <div class="col-md-4" >
+              <div class="form-group">
+                <div class="custom-control custom-checkbox mb-3">
+               <input class="custom-control-input" id="customCheck6" type="checkbox" name="latest_design" value="1">
+               <label class="custom-control-label" for="customCheck6">Latest Design</label>
+               </div>
+              </div>
+          </div> 
+          <div class="col-md-4" >
+              <div class="form-group">
+                <div class="custom-control custom-checkbox mb-3">
+               <input class="custom-control-input" id="customCheck7" type="checkbox" name="special_offer" value="1">
+               <label class="custom-control-label" for="customCheck7">Special Offer</label>
+               </div>
+              </div>
+          </div> 
+          <div class="col-md-4">
+              <div class="form-group">
+                <div class="custom-control custom-checkbox mb-3">
+               <input class="custom-control-input" id="customCheck8" type="checkbox" name="collection" value="1">
+               <label class="custom-control-label" for="customCheck8">Collection</label>
+               </div>
+              </div>
+          </div>
+          </div> 
+
+           <hr style="margin-top:25px;">
+          <h3>Subcategory with Page:</h3>
+         <div class="row">
+          <div class="col-md-4" >
+              <div class="form-group">
+                <div class="custom-control custom-checkbox mb-3">
+               <input class="custom-control-input" id="customCheck1" type="checkbox" name="newarrivals_one" value="1">
+               <label class="custom-control-label" for="customCheck1">New Arrivals One</label>
+               </div>
+              </div>
+          </div> 
+          <div class="col-md-4" >
+              <div class="form-group">
+                <div class="custom-control custom-checkbox mb-3">
+               <input class="custom-control-input" id="customCheck2" type="checkbox" name="newarrivals_two" value="1">
+               <label class="custom-control-label" for="customCheck2">New Arrivals Two</label>
+               </div>
+              </div>
+          </div> 
+          <div class="col-md-4" >
+              <div class="form-group">
+                <div class="custom-control custom-checkbox mb-3">
+               <input class="custom-control-input" id="customCheck3" type="checkbox" name="newarrivals_three" value="1">
+               <label class="custom-control-label" for="customCheck3">New Arrivals Three</label>
+               </div>
+              </div>
+          </div> 
+          <div class="col-md-4" >
+              <div class="form-group">
+                <div class="custom-control custom-checkbox mb-3">
+               <input class="custom-control-input" id="customCheck4" type="checkbox" name="newarrivals_four" value="1">
+               <label class="custom-control-label" for="customCheck4">New Arrivals Four</label>
+               </div>
+              </div>
+          </div> 
+          <div class="col-md-4" >
+              <div class="form-group">
+                <div class="custom-control custom-checkbox mb-3">
+               <input class="custom-control-input" id="customCheck5" type="checkbox" name="newarrivals_five" value="1">
+               <label class="custom-control-label" for="customCheck5">New Arrivals Five</label>
+               </div>
+              </div>
+          </div> 
+          <div class="col-md-4" >
+              <div class="form-group">
+                <div class="custom-control custom-checkbox mb-3">
+               <input class="custom-control-input" id="customCheck6" type="checkbox" name="latest_design" value="1">
+               <label class="custom-control-label" for="customCheck6">Latest Design</label>
+               </div>
+              </div>
+          </div> 
+          <div class="col-md-4" >
+              <div class="form-group">
+                <div class="custom-control custom-checkbox mb-3">
+               <input class="custom-control-input" id="customCheck7" type="checkbox" name="special_offer" value="1">
+               <label class="custom-control-label" for="customCheck7">Special Offer</label>
+               </div>
+              </div>
+          </div> 
+          <div class="col-md-4">
+              <div class="form-group">
+                <div class="custom-control custom-checkbox mb-3">
+               <input class="custom-control-input" id="customCheck8" type="checkbox" name="collection" value="1">
+               <label class="custom-control-label" for="customCheck8">Collection</label>
+               </div>
+              </div>
+          </div>
+          </div> 
+
+          <button class="btn btn-primary" style="margin-top:15px;" type="submit">Save Product</button>
         </form>  
         </div>
     </div>
 </div> 
+
+
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
 </script>
