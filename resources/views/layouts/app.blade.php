@@ -144,7 +144,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         <ul class="multi-column-dropdown">
                                              @php  
                                                 $subcat_one=DB::table('subcategories')->where('category_id',$cat->id)->where('subcat_1',1)->get();
-
                                                  $subcat_two=DB::table('subcategories')->where('category_id',$cat->id)->where('subcat_2',1)->get();
                                             @endphp
                                            @foreach($subcat_one as $row)
