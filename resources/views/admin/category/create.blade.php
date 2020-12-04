@@ -42,7 +42,22 @@
                 <label class="form-control-label" for="example3cols1Input">Category Name*</label>
                 <input type="text" class="form-control" id="example3cols1Input" placeholder="Name" name="category_name">
               </div>
-            </div>  
+            </div> 
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="form-control-label" for="example3cols1Input">Image*</label>
+                <input type="file" class="form-control" id="example3cols1Input" name="logo" required="">              
+              </div>
+            </div> 
+            <div class="col-md-6 " style="">
+              <div class="form-group">
+                
+                <div class="col-md-6">
+                    <img src="" style="height:40px; width: 40px; margin:30px;" >
+                  </div>
+              </div>
+            </div> 
+          </div>
               <button class="btn btn-primary" type="submit">Save Category</button>
             </div>
           </form>
