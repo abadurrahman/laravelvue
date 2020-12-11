@@ -378,23 +378,11 @@
 
           @if(Auth::user()->contact == 1)
             <li class="nav-item">
-                <a class="nav-link" href="#Contact" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="Contact">
-                    <i class="ni ni-archive-2 text-green"></i>
-                    <span class="nav-link-text">Contact Message</span>
-                </a>
-                <div class="collapse" id="Contact">
-                    <ul class="nav nav-sm flex-column">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link ">New Message</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link ">All Message</a>
-
-                        </li>
-                        
-                    </ul>
-                </div>
-            </li>
+               <a class="nav-link" href="{{ route('admin.contact') }}">
+                  <i class="ni ni-archive-2 text-green"></i>
+                 <span class="nav-link-text">Contact</span>
+               </a>
+             </li>
             @else
             @endif
 

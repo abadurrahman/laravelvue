@@ -25,7 +25,7 @@
       </div>
     </div>
     <!-- Page content -->
-    <div class="container-fluid mt--6">
+    <div class="container-fluid mt--6" style="padding:40px;margin-top:-5.5rem">
       <div class="row">
         <div class="col-xl-8 order-xl-1">
           <div class="card">

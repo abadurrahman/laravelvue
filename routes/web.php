@@ -211,6 +211,11 @@ Route::get('admin/seo', 'SeoController@Seo')->name('admin.seo');
 Route::post('admin/update/seo', 'SeoController@UpdateSeo')->name('update.seo');
 
 
+//contact
+Route::get('admin/all/contact', 'ContactController@index')->name('admin.contact');    
+Route::get('delete/contact/{id}','ContactController@DeleteContact'); 
+Route::get('view/contact/{id}','ContactController@ViewContact'); 
+
 //HomeAdvertise
 Route::prefix('/admin')->namespace('Admin')->group(function(){
     Route::resource('header-advertise', 'HeaderAdvertiseController');
@@ -266,3 +271,6 @@ Route::get('request/return/{id}','PaymentController@RequestReturn');
 //tracking
 Route::post('order/tracking', 'FrontController@OrderTracking')->name('order.tracking');
  Route::post('product/search', 'FrontController@ProductSearch')->name('product.search');
+
+ //contact
+ Route::post('contact', 'ContactController@contact')->name('store.contact');

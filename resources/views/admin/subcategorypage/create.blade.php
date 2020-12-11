@@ -27,7 +27,7 @@
         </div>
     </div>
 </div>
-<div style="padding:25px;margin-top:-5.5rem">
+<div style="padding:40px;margin-top:-5.5rem">
   <div class="card mb-4">
         <!-- Card header -->
         <div class="card-header">
