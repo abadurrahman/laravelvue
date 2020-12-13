@@ -274,3 +274,11 @@ Route::post('order/tracking', 'FrontController@OrderTracking')->name('order.trac
 
  //contact
  Route::post('contact', 'ContactController@contact')->name('store.contact');
+
+  //contact
+ Route::post('add/comment', 'CommentController@comment')->name('comment');
+
+//comment
+Route::group(['middleware'=>['auth']], function (){  
+   Route::post('comment/{product}','CommentController@store')->name('comment.store');
+});           

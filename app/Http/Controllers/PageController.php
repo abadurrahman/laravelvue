@@ -14,14 +14,15 @@ class PageController extends Controller
     public function ProductView($id,$product_name)
     {   
       $product=DB::table('products')->where('products.id',$id)->first();
-      
+      $total_comment=DB::table('comments')->where('product_id',$id)->count();
+
       $color=$product->product_color;
       $product_color = explode(',', $color);
 
       $size=$product->product_size;
       $product_size = explode(',', $size);
 
-      return  view('pages.page_details',compact('product','product_color','product_size'));
+      return  view('pages.page_details',compact('product','product_color','product_size', 'total_comment'));
     }
 
    public function AddCart(Request $request,$id)

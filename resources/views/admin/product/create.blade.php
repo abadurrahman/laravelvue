@@ -109,14 +109,7 @@
                 </div>
              </div>
 
-             <div class="col-lg-4">
-              <div class="form-group">
-                <label class="form-control-label" >Discount Prize:</label>
-                  <input type="text" class="form-control" placeholder="discount prize" name="discount_price">
-                </div>
-             </div>
-
-             <div class="col-lg-4">
+             <div class="col-lg-12">
               <div class="form-group">
                 <label class="form-control-label" >video Link:</label>
                   <input type="text" class="form-control" placeholder="link" name="video_link">

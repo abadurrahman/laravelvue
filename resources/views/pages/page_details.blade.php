@@ -1,5 +1,10 @@
 @extends('layouts.app')
 @section('content')
+@php 
+    $comment=DB::table('comments')->join('users','comments.user_id','users.id')
+        ->select('comments.*','users.name','users.image')->orderBy('id','DESC') 
+        ->get();
+@endphp
 <!-- banner -->
 <div class="page-head">
 	<div class="container">
@@ -122,7 +127,7 @@
 					<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
 						<ul id="myTab" class="nav nav-tabs" role="tablist">
 							<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Description</a></li>
-							<li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Reviews(1)</a></li>
+							<li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">{!!{ $total_comment }}</a></li>
 							<li role="presentation" class="dropdown">
 								<a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents">Information <span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
@@ -137,31 +142,39 @@
 							</div>
 							<div role="tabpanel" class="tab-pane fade bootstrap-tab-text" id="profile" aria-labelledby="profile-tab">
 								<div class="bootstrap-tab-text-grids">
+
+									
+									 
+									  @foreach($comment as $com)
 									<div class="bootstrap-tab-text-grid">
 										<div class="bootstrap-tab-text-grid-left">
-											<img src="images/men3.jpg" alt=" " class="img-responsive">
+											<img src="{{asset($com->image)}}" alt=" " class="img-responsive">
 										</div>
 										<div class="bootstrap-tab-text-grid-right">
 											<ul>
-												<li><a href="#">Admin</a></li>
-												<li><a href="#"><span class="glyphicon glyphicon-share" aria-hidden="true"></span>Reply</a></li>
+												<li><a href="#">{{ $com->name }}</a></li>
+												
 											</ul>
-											<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis 
-												suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem 
-												vel eum iure reprehenderit.</p>
+											<p>{{ $com->comment }}</p>
 										</div>
 										<div class="clearfix"> </div>
 									</div>
-									
+								 @endforeach
+								  
 									<div class="add-review">
 										<h4>add a review</h4>
-										<form>
-											<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-											<input type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-											
-											<textarea type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+										 @guest
+					 					 <p>For post a new comment.You need to login first.
+                                        <a href="{{url('/')}}">Login</a></p>
+                                     @else
+										<form method="POST" action="{{ route('comment.store', $product->id) }}">
+											@csrf
+											<textarea type="text" onfocus="this.value = '';" required="" name="comment">Message...</textarea>
 											<input type="submit" value="SEND">
+											
 										</form>
+										 @endguest
+
 									</div>
 								</div>
 							</div>
